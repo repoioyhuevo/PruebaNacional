@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/pagebkg"
+    tools:context=".AgregarContactoActivity">
+
+    <EditText
+        android:id="@+id/editTextNombreContacto"
+        android:layout_width="match_parent"
+        android:textColor="@color/grey"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/editTextApellidoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/editTextNombreContacto"
+        android:layout_marginTop="8dp"
+        android:hint="Apellido" />
+
+    <EditText
+        android:id="@+id/editTextApodoContacto"
+        android:layout_width="match_parent"
+        android:textColor="@color/grey"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextApellidoContacto"
+        android:layout_marginTop="8dp"
+        android:hint="Apodo" />
+
+    <EditText
+        android:id="@+id/editTextCorreoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextApodoContacto"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/grey"
+        android:inputType="textEmailAddress"
+        android:hint="Correo Electrónico" />
+
+    <Button
+        android:id="@+id/btnGuardarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCorreoContacto"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Contacto" />
+
+</RelativeLayout>

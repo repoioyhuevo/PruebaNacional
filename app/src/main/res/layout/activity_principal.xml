@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/pagebkg"
+    android:paddingBottom="16dp"
+    tools:context=".Principal">
+
+    <Button
+        android:id="@+id/btnGoToListarContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a ListarContactosActivity"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnGoToMostrarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a MostrarDatosActivity"
+        android:layout_below="@id/btnGoToListarContactos"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoToListarContactos"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="90dp"
+        android:text="Ir a Mensaje" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="234dp"
+        android:layout_height="359dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="356dp"
+        app:srcCompat="@drawable/imglogo" />
+</RelativeLayout>
